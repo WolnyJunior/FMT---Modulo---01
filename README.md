@@ -10,3 +10,9 @@
 
 ### Exercicio-04
 <p>Calcular e imprimir números de um array, utilizando .reduce</p>
+
+### Exercicio-05
+<p>Imprimir a lista de números em ordem crescente.</p>
+
+### Exercício-06
+<p>Imprimir apenas números pares da array, utilizando filter()</p>
