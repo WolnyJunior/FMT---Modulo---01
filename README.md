@@ -16,3 +16,6 @@
 
 ### Exercício-06
 <p>Imprimir apenas números pares da array, utilizando filter()</p>
+
+### Exercício-07
+<p>Imprimir o quadrado dos números do array. </p>
