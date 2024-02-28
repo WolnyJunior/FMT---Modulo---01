@@ -19,3 +19,15 @@
 
 ### Exercício-07
 <p>Imprimir o quadrado dos números do array. </p>
+
+# Semana-06
+### Exercício-01
+<ul>
+  <li>A função verificarParOuImpar recebe um número como parâmetro.</li>
+  <li>Dentro da Promise, verificamos se o valor passado é de fato um número.</li>
+  <li>Se não for um número válido, a Promise é rejeitada com uma mensagem de erro.</li>
+  <li>Se o número for válido, verificamos se é par ou ímpar e resolvemos a Promise com a mensagem correspondente.</li>
+  <li>O exemplo de uso solicita ao usuário que insira um número e, em seguida, chama a função verificarParOuImpar 
+    passando o número digitado. O resultado é então tratado com .then() para lidar com o caso de sucesso e .catch() 
+    para lidar com erros.</li>
+</ul>
