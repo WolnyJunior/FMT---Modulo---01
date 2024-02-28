@@ -1,17 +1,17 @@
 # Semana-05
-### Exercicio-01
+### Exercício-01
 <p>Criar uma lista com 3 frutas e exibir no console a segunda fruta do array.</p>
 
-### Exercicios-02
+### Exercícios-02
 <p>Adicionar frutas ao array anterior, e remover o primeiro item do array.</p>
 
-### Exercicio-03
+### Exercício-03
 <p>Criar um array com 5 números, usar o loop for para imprimir no console.</p>
 
-### Exercicio-04
+### Exercício-04
 <p>Calcular e imprimir números de um array, utilizando .reduce</p>
 
-### Exercicio-05
+### Exercício-05
 <p>Imprimir a lista de números em ordem crescente.</p>
 
 ### Exercício-06
@@ -30,4 +30,14 @@
   <li>O exemplo de uso solicita ao usuário que insira um número e, em seguida, chama a função verificarParOuImpar 
     passando o número digitado. O resultado é então tratado com .then() para lidar com o caso de sucesso e .catch() 
     para lidar com erros.</li>
+</ul>
+
+### Exercício-02
+<ul>
+  <li>A função getUserInfo retorna uma Promise que é resolvida após um atraso de 2 segundos.</li>
+  <li>Ela retorna um objeto com informações fictícias de um usuário.</li>
+  <li>Usamos async e await para tornar a chamada assíncrona mais legível e fácil de entender.</li>
+  <li>A função obterDadosDoUsuario chama getUserInfo usando await para esperar que a Promise seja resolvida.</li>
+  <li>Usamos um bloco try/catch para lidar com possíveis erros durante a obtenção das informações do usuário.</li>
+  <li>Utiliza o prompt para solicitar ao usuário que insira o nome, idade e email. Esses dados são então encapsulados em um objeto e retornados através da Promise</li>
 </ul>
