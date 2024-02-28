@@ -40,4 +40,5 @@
   <li>A função obterDadosDoUsuario chama getUserInfo usando await para esperar que a Promise seja resolvida.</li>
   <li>Usamos um bloco try/catch para lidar com possíveis erros durante a obtenção das informações do usuário.</li>
   <li>Utiliza o prompt para solicitar ao usuário que insira o nome, idade e email. Esses dados são então encapsulados em um objeto e retornados através da Promise</li>
+  <li>A função isValidEmail utiliza uma expressão regular para validar se o formato do e-mail é válido. Se o e-mail fornecido pelo usuário não corresponder ao formato esperado, a função getUserInfo rejeitará a Promise com uma mensagem de erro.</li>
 </ul>
