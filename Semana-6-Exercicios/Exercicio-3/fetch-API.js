@@ -1,12 +1,16 @@
-fetch('data.json')
-.then((response)=>{
-    return response.json();
-})
-.then((responseApi)=>{
-    document.write(`Nome: ${responseApi.nome}<br>`)
-    document.write(`Idade: ${responseApi.idade}<br>`)
-    document.write(`E-mail: ${responseApi.email}<br>`)
-})
-.catch((error)=>{
-    console.log(error)
-})
+function usuario() {
+
+    fetch('data.json')
+        .then((minhaFetch) => {
+            return minhaFetch.json();
+        })
+        .then((jsonData) => {
+            let myUserJson = document.getElementById("info")
+            myUserJson.textContent = JSON.stringify(jsonData)
+        })
+        .catch((error) => {
+            console.log(error)
+        });
+}
+
+usuario()
