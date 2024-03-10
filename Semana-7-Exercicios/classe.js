@@ -9,13 +9,23 @@ class Produto {
 
     //Exercicio 2 - criando o construtor
 
-    constructor(nome, preco, quantidade) {
-        this.nome = nome,
-        this.preco = preco,
-        this.quantidade = quantidade
+    constructor(valorNome, valorPreco, valorQuantidade) {
+        this.nome = valorNome,
+            this.preco = valorPreco,
+            this.quantidade = valorQuantidade
     }
+
+    //Exercicio - 3 - criando método vender
+
+    vender(quantidadeVendida) {
+        if (quantidadeVendida > this.quantidade) {
+            console.log("Estoque Insuficiente")
+            console.log(`Existe apenas ${this.quantidade} unidades disponíveis`)
+            return
+        }
+
+        this.quantidade -= quantidadeVendida
+    }
+
+    //
 }
-
-let produto = new Produto("Notebook", "3500,00", "01")
-
-console.log(produto)
