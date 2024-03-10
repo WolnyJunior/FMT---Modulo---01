@@ -10,9 +10,9 @@ class Produto {
     //Exercicio 2 - criando o construtor
 
     constructor(valorNome, valorPreco, valorQuantidade) {
-        this.nome = valorNome,
-            this.preco = valorPreco,
-            this.quantidade = valorQuantidade
+        this.nome = valorNome
+        this.preco = valorPreco
+        this.quantidade = valorQuantidade
     }
 
     //Exercicio - 3 - criando método vender
@@ -41,5 +41,19 @@ class Produto {
     AtualizarPreco(novoValor) {
         this.preco = novoValor
     }
-    
-}//fechamento da classe
+
+}//fechamento da classe Produto
+
+
+//Exercicio 7 - criando classe Pessoa
+class Pessoa {
+    nome
+    idade
+    profissao
+
+    constructor(valorNome, valorIdade, valorProfissao) {
+        this.nome = valorNome
+        this.idade = valorIdade
+        this.profissao = valorProfissao
+    }
+}
