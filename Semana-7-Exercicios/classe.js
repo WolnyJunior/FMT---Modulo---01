@@ -28,16 +28,18 @@ class Produto {
     }
 
     //Exercicio 4 - criando metodo Repor
-    Repor(quantidadeResposta){
+    Repor(quantidadeResposta) {
         this.quantidade += quantidadeResposta
     }
 
     //Exercicio 5 - criando metodo mostrarEstoque
-    MostrarEstoque(){
+    MostrarEstoque() {
         console.log(`O produto ${this.nome}, no valor de R$${this.preco}, possui ${this.quantidade} unidades.`)
     }
 
-
-
-
+    //Exercicio 6  - criando metodo AtualizarPreco
+    AtualizarPreco(novoValor) {
+        this.preco = novoValor
+    }
+    
 }//fechamento da classe
