@@ -27,5 +27,8 @@ class Produto {
         this.quantidade -= quantidadeVendida
     }
 
-    //
+    //Exercicio 4 - criando metodo Repor
+    Repor(quantidadeResposta){
+        this.quantidade += quantidadeResposta
+    }
 }
