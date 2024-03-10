@@ -57,3 +57,17 @@ class Pessoa {
         this.profissao = valorProfissao
     }
 }
+
+//Exercicio 8 - ciando classe Cliente
+class Cliente extends Pessoa{
+    telefone
+    email
+    clienteDesde //deve ser no formato string "ANO-MÊS-DIA"
+
+    constructor(valorNome, valorIdade, valorProfissao, valorTelefone, valorEmail, valorClienteDesde){
+        super(valorNome, valorIdade, valorProfissao)
+        this.telefone = valorTelefone
+        this.email = valorEmail
+        this.clienteDesde = valorClienteDesde
+    }
+}
