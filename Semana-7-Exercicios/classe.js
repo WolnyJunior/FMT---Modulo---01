@@ -17,7 +17,7 @@ class Produto {
 
     //Exercicio - 3 - criando método vender
 
-    vender(quantidadeVendida) {
+    Vender(quantidadeVendida) {
         if (quantidadeVendida > this.quantidade) {
             console.log("Estoque Insuficiente")
             console.log(`Existe apenas ${this.quantidade} unidades disponíveis`)
@@ -59,15 +59,33 @@ class Pessoa {
 }
 
 //Exercicio 8 - ciando classe Cliente
-class Cliente extends Pessoa{
+class Cliente extends Pessoa {
     telefone
     email
     clienteDesde //deve ser no formato string "ANO-MÊS-DIA"
 
-    constructor(valorNome, valorIdade, valorProfissao, valorTelefone, valorEmail, valorClienteDesde){
+    constructor(valorNome, valorIdade, valorProfissao, valorTelefone, valorEmail, valorClienteDesde) {
         super(valorNome, valorIdade, valorProfissao)
         this.telefone = valorTelefone
         this.email = valorEmail
         this.clienteDesde = valorClienteDesde
     }
 }
+
+const clienteSorin = new Cliente("Sorin", 34, "Programador", "986259144", "meuEmail@email.com", "2021-02-18")
+// console.log(clienteSorin)
+
+
+const notebook = new Produto("Notebook Samsung", "R$:3500,00", 25)
+console.log(notebook)
+
+notebook.Vender(12)
+console.log(notebook)
+
+notebook.Repor(25)
+console.log(notebook)
+
+notebook.MostrarEstoque()
+
+notebook.AtualizarPreco("R$: 3599,00")
+console.log(notebook)
